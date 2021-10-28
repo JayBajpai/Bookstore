@@ -1,0 +1,42 @@
+.login-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 333px;
+    height: 333p;
+}
+.login-input {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 190px;
+}
+.div-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 18px;
+}
+.reg-form {
+    height: 350px;
+}
+.reg-input {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 292px;
+}
+.div-but-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.button1 {
+    width: 220px;
+    background-color: #a03037 !important;
+}
