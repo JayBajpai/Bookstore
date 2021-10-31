@@ -1,0 +1,34 @@
+@mixin  icon($display,$direction,$jst-cont) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $jst-cont;
+}
+
+
+.app-header{
+    background-color: #8F2B2F !important;
+}
+.header-title{
+    display: flex;
+    width: 130px;
+    justify-content: space-around;
+    margin-left: 127px;
+}
+.search-bar{
+    width: 49%;
+}
+.text{
+    font-size: 20px;
+}
+.profile{
+    @include icon(flex,column,null)
+}
+.cart{
+    @include icon(flex,column,null)
+}
+.side-header{
+    width: 200px;
+    margin-left: 190px;
+    @include icon(flex,null,space-around)
+
+}

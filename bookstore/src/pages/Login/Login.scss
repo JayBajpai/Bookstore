@@ -1,0 +1,38 @@
+@mixin  align($display,$justify-content,$direction,$height) {
+    display: flex;
+    justify-content: $justify-content;
+    flex-direction: $direction;
+    align-items: center;
+    height: $height;
+}
+
+.login-form{
+    @include align(flex,center,column,333px);
+    height: 333p;  
+}
+.login-input{
+    @include align(flex,space-evenly,column,190px);
+}
+.div-buttons{   
+    @include align(flex,space-evenly,null,null);
+    width: 100%;
+    margin-top: 18px;
+}
+.reg-form{
+    height: 350px;
+}
+
+.reg-input{
+    @include align(flex,space-evenly,column, 292px);
+}
+.div-but-content{
+    @include align(flex,center,null,null);
+    width: 100%;
+}
+.button1{
+    width: 220px;
+    background-color: #A03037 !important;
+}
+.button{
+    
+}
