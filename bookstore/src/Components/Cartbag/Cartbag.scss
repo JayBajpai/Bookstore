@@ -1,0 +1,226 @@
+@mixin flex($disp, $justify, $direction, $width, $height, $margintop) {
+    margin-top: $margintop;
+    display: $disp;
+    flex-direction: $direction;
+    justify-content: $justify;
+    height: $height;
+    width: $width;
+  
+}
+$margin-left: 162px;
+$border: 1px solid #d9cccc;
+.CartBag-frame {
+    @include flex(flex,center ,column ,null ,100% ,100px );
+    align-items: center;
+}
+.header-detail {
+    font-weight: bold;
+    font-size: 25px;
+}
+.title {
+    width: 81%;
+}
+.cartBag-content {
+    width: 78%;
+    min-height: 100px;
+    border: $border;
+    padding: 20px;
+    margin-top: 20px;
+}
+.main-cart {
+    display: flex;
+}
+.bag-text {
+    @include flex(flex, space-evenly, column, 300px, 161px, null);
+}
+.img-book {
+    width: 94px;
+    margin: 20px 20px 10px 5px;
+}
+.cart-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+.cart-bookAuthor {
+    font-size: 15px;
+    height: 12px;
+    color: #a49595;
+    font-weight: 600;
+}
+.price {
+    font-weight: bold;
+}
+.text-content{
+    width: 180px;
+}
+.count-content {
+    display: flex;
+    .minus {
+        @include flex(flex, center, null, 24px, 23px, null);
+        border: $border;
+        align-items: center;
+        border-radius: 15px;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    .count {
+        width: 54px;
+        border: $border;
+        margin: 0px 7px 0px 7px;
+        display: flex;
+        justify-content: center;
+    }
+    .plus {
+        @include flex(flex, center, null, 24px, 23px, null);
+        border: $border;
+        align-items: center;
+        border-radius: 15px;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    .remove {
+        cursor: pointer;
+        margin-left: 39px;
+    }
+}
+.btn-content {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 37px;
+}
+.btn-place {
+    background-color: #3371b5 !important;
+    color: white !important;
+}
+.address-frame {
+    @include flex(flex, center, column, 79%, 74px, 12px);
+    border: $border;
+    padding-left: 23px;
+}
+.order-frame {
+    @include flex(flex, center, column, 78%, 30px, 12px);
+    border: $border;
+    padding: 23px;
+    margin-bottom: 200px;
+}
+.address-frame-details {
+    @include flex(flex, space-evenly, column, 78%, 552px, null);
+    border: $border;
+    margin-top: 12px;
+    padding: 23px;
+}
+.customer-dtl {
+    display: flex;
+    justify-content: space-between;
+}
+.dtl-btn {
+    color: #a03037 !important;
+}
+.custm-content-names {
+    @include flex(flex, space-between, null, 460px, null, null);
+}
+.heading {
+    @include flex(flex, space-between, null, 158px, null, null);
+}
+.address-feild {
+    width: 462px;
+    height: 74px !important;
+}
+.city-state {
+    display: flex;
+    width: 464px;
+    justify-content: space-between;
+}
+.order-content {
+    width: 78%;
+    min-height: 300px;
+    border: 1px solid #d9cccc;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 164px;
+}
+// .continue{
+
+// }
+@media screen and (width: 500px) {
+    $width: 616px;
+    $marginleft: 641px;
+
+    .cartBag-content{
+        margin-left:$marginleft;
+        width:$width;
+    }
+    .address-frame-details{
+        height: 856px;
+        margin-left: $marginleft;
+        width:$width;
+    }
+    .address-frame{
+        margin-left:$marginleft;
+        width:$width;
+    }
+    .order-frame{
+        margin-left:$marginleft;
+        width:$width;
+    }
+    .order-content{
+        margin-left: $marginleft;
+        width:$width;
+    }
+    .custm-content-names{
+        height: 106px;
+    }
+    .city-state{
+        height: 106px;
+    }
+}
+@media screen and (width: 600px) {
+    .custm-content-names {
+        flex-direction: column;
+    }
+    .address-feild {
+        width: 383px;
+    }
+    .city-state {
+        flex-direction: column;
+    }
+}
+@media screen and (width: 360px) {
+    .address-feild {
+        width: 212px;
+    }
+    .dtl-btn {
+        font-size: 9px;
+        width: 130px;
+        height: 39px;
+    }
+    .header-detail {
+        font-size: 17px;
+    }
+    .title {
+        width: 94%;
+    }
+    .cartBag-content{
+        margin-left: $margin-left;
+    }
+    .address-frame-details{
+        height: 856px;
+        margin-left: $margin-left;
+    }
+    .address-frame{
+        margin-left: $margin-left;
+    }
+    .order-frame{
+        margin-left: $margin-left;
+    }
+    .order-content{
+        margin-left: $margin-left;
+    }
+    .custm-content-names{
+        height: 106px;
+    }
+    .city-state{
+        height: 106px;
+    }
+}
+

@@ -1,0 +1,39 @@
+@mixin items($jstCont,$width,$aliItem) {
+    display: flex;
+    justify-content: $jstCont;
+    width: $width;
+    align-items: $aliItem;
+    
+}
+.cart-frame{
+    @include items(center,null,flex-start );
+    margin-top: 108px;
+    height: 464px; 
+}
+.book-disp{
+    width: 50%;
+}
+.button{
+    @include items(space-evenly,323px,null );
+    margin-top: 14px;
+}
+.img-crt-align{
+    @include items(space-between,null,null );
+    flex-direction: column;
+    height: 120px;
+}
+.img-crt{
+    width: 40px;
+    padding: 3px;
+    border: 1px solid #e1c9c9;
+}
+.dot {
+    height: 9px;
+    width: 9px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+.cart-book-dtl{
+    @include items(center,800px,center);
+}

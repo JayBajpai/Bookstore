@@ -1,0 +1,17 @@
+.disp{
+    display: flex;
+}
+.Description{
+    border: 1px solid #d6d0d0;
+    border-radius: 10px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 305px;
+    position: absolute;
+    z-index: 20000;
+    background-color: grey;
+    right: 508px;
+
+}

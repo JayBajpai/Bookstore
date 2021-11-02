@@ -1,0 +1,214 @@
+@mixin  icon($display,$direction,$jst-cont) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $jst-cont;
+}
+
+
+.app-header{
+    background-color: #8F2B2F !important;
+}
+.header-title{
+    display: flex;
+    width: 130px;
+    justify-content: space-around;
+    margin-left: 127px;
+}
+.search-bar{
+    width: 53%;
+}
+.input-search{
+    width: 400px; 
+    padding-left: 35px; 
+}
+.menulist3{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 490px;
+    margin-left: -18px;
+    margin-top: 4px;
+}
+.text{
+    font-size: 20px;
+    color: white !important;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.profile{
+    @include icon(flex,column,null)
+}
+.profile-icon{
+    @include icon(flex,null,center)
+}
+.logout{
+ @include icon(flex,row , center)   
+}
+.cart{
+    @include icon(flex,column,null);
+    cursor: pointer;
+}
+.side-header{
+    width: 268px;
+    // margin-left: 190px;
+    @include icon(flex,null,space-around)
+
+}
+// @media screen and (min-width: 750px) {
+//     .side-header {
+//         margin-left: 5px; 
+//     }
+// }
+// @media screen and (min-width: 600px) {
+//     .header-title {
+//         margin-left: 3px;
+//         margin-right: 12px;
+//     }
+// }
+@media only screen and (width: 360px) {
+    .profile-text{
+        display: none;
+    }
+    .search-bar{
+        width: 38%;
+    }
+    .header-title{
+        width: 114px;
+        margin-left: 5px;
+    }
+    .text{
+        font-size: 18px;
+        margin-right: 12px;
+    }
+    img{
+        width: 17px;
+    }
+    .footer-content{
+        width: 500px;
+    position: absolute;
+
+    }
+    .input-search{
+        width: 100px;
+    }
+
+}
+@media only screen and (width: 411px) {
+    .header-title{
+        margin-left: 0px;
+    }
+    // .profile-text{
+    //     display: none;
+    // }
+    .search-bar{
+        width: 38%;
+    }
+    .header-title{
+        width: 114px;
+        margin-left: 5px;
+    }
+    .text{
+        font-size: 18px;
+        margin-right: 12px;
+    }
+    img{
+        width: 17px;
+    }
+    .footer-content{
+        width: 500px;
+    position: absolute;
+
+    }
+    .input-search{
+        width: 100px;
+    }
+
+}
+@media only screen and (width: 320px) {
+    // .profile-text{
+    //     display: none;
+    // }
+    .search-bar{
+        width: 38%;
+    }
+    .header-title{
+        width: 114px;
+        margin-left: 5px;
+    }
+    .text{
+        font-size: 18px;
+        margin-right: 12px;
+    }
+    img{
+        width: 17px;
+    }
+    .footer-content{
+        width: 500px;
+    position: absolute;
+
+    }
+    .input-search{
+        width: 100px;
+    }
+    .profile-text{
+        font-size: 9px;
+    }
+    .cart{
+        font-size: 9px;    }
+
+}
+@media only screen and (width: 375px) {
+    // .profile-text{
+    //     display: none;
+    // }
+    .search-bar{
+        width: 38%;
+    }
+    .header-title{
+        margin-left: 0px;
+    }
+    .text{
+        font-size: 18px;
+        margin-right: 12px;
+    }
+    img{
+        width: 17px;
+    }
+    .footer-content{
+        width: 500px;
+    position: absolute;
+
+    }
+    .input-search{
+        width: 100px;
+    }
+
+}
+@media only screen and (width: 280px) {
+    // .profile-text{
+    //     display: none;
+    // }
+    .search-bar{
+        width: 38%;
+    }
+    .header-title{
+        width: 114px;
+        margin-left: 5px;
+    }
+    .text{
+        font-size: 18px;
+        margin-right: 12px;
+    }
+    img{
+        width: 17px;
+    }
+    .footer-content{
+        width: 500px;
+    position: absolute;
+
+    }
+    .input-search{
+        width: 100px;
+    }
+
+}
